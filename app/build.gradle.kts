@@ -71,15 +71,34 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-    // Room database and Datastore
-    implementation(libs.androidx.room)
-    implementation(libs.androidx.room.ktx)
-    ksp(libs.androidx.room.compiler)
-    implementation(libs.androidx.datastore.preferences)
-
     // Navigation component
     implementation(libs.androidx.navigation.compose)
 
     // ViewModel
     implementation(libs.androidx.lifecycle.viewmodel)
+
+    // Room database and Datastore
+    implementation(libs.androidx.room)
+    implementation(libs.androidx.room.ktx)
+    ksp(libs.androidx.room.compiler)
+
+    // Datastore
+    implementation(libs.androidx.datastore.preferences)
+
+    // LiveData
+    implementation(libs.androidx.compose.runtime.livedata)
+
+    // Retrofit
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.moshi)
+    implementation(libs.retrofit.scalars)
+
+    // Moshi
+    implementation(libs.moshi)
+
+    // Coil
+    implementation(libs.coil)
+
+    // Work Runtime
+    implementation(libs.androidx.work.runtime)
 }
